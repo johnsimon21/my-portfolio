@@ -4,7 +4,6 @@ import './App.css'
 function App() {
 
 
-  let langValue = true;
   const [isFirstLang, setIsFirstLang] = useState<boolean>(true);
 
   const toggleLanguage = (langValue: number) => {
