@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface SkillCardProps {
   skill: {
@@ -16,6 +16,20 @@ interface SkillCardProps {
 
 export const SkillCard = ({ skill, isAnimated, isPortuguese, index }: SkillCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [progressWidth, setProgressWidth] = useState(0);
+
+  // Animate progress bar when isAnimated becomes true
+  useEffect(() => {
+    if (isAnimated) {
+      const timer = setTimeout(() => {
+        setProgressWidth(skill.level);
+      }, index * 50); // Stagger animation based on index
+
+      return () => clearTimeout(timer);
+    } else {
+      setProgressWidth(0);
+    }
+  }, [isAnimated, skill.level, index]);
 
   const getSkillLevelText = (level: number) => {
     if (level >= 90) return isPortuguese ? 'Especialista' : 'Expert';
@@ -31,13 +45,15 @@ export const SkillCard = ({ skill, isAnimated, isPortuguese, index }: SkillCardP
     return '#EF4444';
   };
 
+  // Generate delay class based on index
+  const getDelayClass = (index: number) => {
+    const delay = Math.min(index * 100, 1500); // Cap at 1500ms
+    return `animate-delay-${delay}`;
+  };
+
   return (
     <div
-      className="group bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-[#2E3B63]/50 hover:border-[#208FBB]/50 skill-card"
-      style={{
-        animationDelay: `${index * 100}ms`,
-        animation: 'fadeInUp 0.6s ease-out forwards'
-      }}
+      className={`group bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-[#2E3B63]/50 hover:border-[#208FBB]/50 animate-fade-in-up ${getDelayClass(index)}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -82,9 +98,9 @@ export const SkillCard = ({ skill, isAnimated, isPortuguese, index }: SkillCardP
         
         <div className="w-full bg-[#0A1428] rounded-full h-3 overflow-hidden">
           <div
-            className="h-full rounded-full progress-bar relative overflow-hidden"
+            className="h-full rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
             style={{
-              width: isAnimated ? `${skill.level}%` : '0%',
+              width: `${progressWidth}%`,
               backgroundColor: skill.color,
             }}
           >

@@ -30,14 +30,17 @@ export const ProjectCard = ({ project, isPortuguese, index, onViewDetails }: Pro
         return statusMap[status as keyof typeof statusMap]?.[isPortuguese ? 'pt' : 'en'] || status;
     };
 
+    // Generate delay class based on index
+    const getDelayClass = (index: number) => {
+        const delay = Math.min(index * 100, 1500); // Cap at 1500ms
+        return `animate-delay-${delay}`;
+    };
+
     return (
         <div
-            className={`group relative bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-2xl overflow-hidden border border-[#2E3B63]/50 hover:border-[#208FBB]/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl ${project.featured ? 'ring-2 ring-[#208FBB]/20' : ''
-                }`}
-            style={{
-                animationDelay: `${index * 100}ms`,
-                animation: 'fadeInUp 0.6s ease-out forwards'
-            }}
+            className={`group relative bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-2xl overflow-hidden border border-[#2E3B63]/50 hover:border-[#208FBB]/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up ${getDelayClass(index)} ${
+                project.featured ? 'ring-2 ring-[#208FBB]/20' : ''
+            }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

@@ -36,7 +36,7 @@ export const SkillsSection = ({ id, isPortuguese }: SkillsSectionProps) => {
     }, 100);
 
     return () => clearTimeout(timer);
-  }, [activeCategory, filteredSkills]);
+  }, [activeCategory]);
 
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
