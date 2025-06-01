@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#141E46]">
+    <div className="w-full min-h-screen bg-[#141E46] overflow-x-hidden">
       <Header
         navigationItems={navigationItems}
         onNavigationClick={handleNavigationClick}
@@ -47,7 +47,7 @@ function App() {
       <hr className="hr border-[#182751] bg-[#182751] h-[8px]" />
 
       {/* Main Content Sections */}
-      <main>
+      <main className="relative">
         {/* Hero Section - First thing users see */}
         <section id="hero" className="py-5 px-[80px] flex flex-col">
           <ControlsSection
@@ -60,7 +60,7 @@ function App() {
           <HeroSection isPortuguese={isPortuguese} />
         </section>
 
-        {/* About Section */}
+        {/* About Section - Enhanced with projects showcase */}
         <AboutSection
           id="about" 
           isPortuguese={isPortuguese} 
