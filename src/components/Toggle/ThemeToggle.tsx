@@ -22,7 +22,7 @@ export const ThemeToggle = ({ isDark, onToggle }: ThemeToggleProps) => {
       <button
         onClick={onToggle}
         className="light flex justify-center items-center basis-1/2 w-full h-full bg-[#ffffff] rounded-r-full"
-        aria-label="Switch to light theme"
+        aria-label="Switch to light theme"  
       >
         <SunIcon />
       </button>
