@@ -151,7 +151,7 @@ export const ContactSection = ({ id, isPortuguese }: ContactSectionProps) => {
                 </div>
 
                 {/* Testimonial */}
-                <div className="bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-2xl p-6 border border-[#2E3B63]/50">
+                {/* <div className="bg-gradient-to-br from-[#1A2B5C] to-[#0F1B3C] rounded-2xl p-6 border border-[#2E3B63]/50">
                   <div className="text-center">
                     <div className="text-4xl mb-4">💬</div>
                     <blockquote className="text-[#D0D8EA] italic mb-4">
@@ -165,7 +165,7 @@ export const ContactSection = ({ id, isPortuguese }: ContactSectionProps) => {
                     </div>
                     <div className="text-[#B1BDDF] text-sm">⭐⭐⭐⭐⭐</div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Quick Contact CTA */}
                 <div className="bg-gradient-to-r from-[#208FBB] to-[#4277DE] rounded-2xl p-6 text-center">
@@ -179,7 +179,7 @@ export const ContactSection = ({ id, isPortuguese }: ContactSectionProps) => {
                     }
                   </p>
                   <a
-                    href="https://wa.me/5511999999999"
+                    href="https://wa.me/244922691189"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-[#208FBB] font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-300"
@@ -207,13 +207,13 @@ export const ContactSection = ({ id, isPortuguese }: ContactSectionProps) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:john.simon@example.com"
+                href="mailto:john.johnsimonjs21@gmail.com"
                 className="bg-[#208FBB] hover:bg-[#1A7A9A] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 {isPortuguese ? 'Enviar Email' : 'Send Email'}
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/244922691189"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] hover:bg-[#20B954] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"

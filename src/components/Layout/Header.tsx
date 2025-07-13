@@ -23,16 +23,17 @@ export const Header = ({
   onSwitchToEnglish,
 }: HeaderProps) => {
   return (
-    <header className="h-[210px] flex px-[80px]">
-      <nav className="flex w-full">
-        <div className="justify-self-start grow flex items-center text-4xl font-semibold">
+    <header className="flex flex-col md:flex-row items-center md:items-stretch px-4 sm:px-8 md:px-[80px] h-auto md:h-[210px] py-4 md:py-0 w-full">
+      <nav className="flex flex-col md:flex-row w-full items-center md:items-center">
+        <div className="flex justify-center md:justify-start w-full md:w-auto items-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-0">
           <Logo />
         </div>
-
-        <NavigationMenu 
-          items={navigationItems} 
-          onItemClick={onNavigationClick}
-        />
+        <div className="flex-1 flex justify-center  md:justify-end w-full">
+          <NavigationMenu 
+            items={navigationItems} 
+            onItemClick={onNavigationClick}
+          />
+        </div>
       </nav>
     </header>
   );

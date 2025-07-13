@@ -87,34 +87,68 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Meu Mentor Eifel",
     description: {
-      pt: "Aplicativo mobile para gerenciamento de tarefas com sincronização em tempo real, notificações push e colaboração em equipe.",
-      en: "Mobile task management app with real-time sync, push notifications and team collaboration features."
+      pt: "Aplicativo mobile para gerenciamento de sessões com chat e chamadas em tempo real, notificações push e relatórios de engajamento e sessões.",
+      en: "Mobile session management app with real-time chat and call, push notifications and sessions report."
     },
     shortDescription: {
-      pt: "App de produtividade para equipes",
-      en: "Productivity app for teams"
+      pt: "App de produtividade para mentorias em sessões",
+      en: "Productivity app for sessions mentorship"
     },
-    technologies: ["React Native", "Firebase", "Redux", "TypeScript"],
+    technologies: ["React Native", "Firebase", "Tailwind Class", "TypeScript", "SQLite", "Websocket", "WebRTC"],
     category: "mobile",
     image: "/projects/task-app-preview.jpg",
-    demoUrl: "https://task-app-demo.com",
-    githubUrl: "https://github.com/johnsimon21/task-management",
-    status: "completed",
+    demoUrl: "#",
+    githubUrl: "https://github.com/johnsimon21/MME/tree/main/MME",
+    status: "in-progress",
     featured: true,
-    year: 2024,
+    year: 2025,
     highlights: {
       pt: [
         "Sincronização em tempo real",
         "Notificações push",
-        "Colaboração em equipe",
+        "Sessões de mentorias",
         "Interface intuitiva"
       ],
       en: [
         "Real-time synchronization",
         "Push notifications",
-        "Team collaboration",
+        "Sessions mentorship",
+        "Intuitive interface"
+      ]
+    }
+  },
+  {
+    id: 7,
+    title: "GFACT",
+    description: {
+      pt: "Aplicativo mobile para gerenciamento de faturas e recibos, relatório financeiro e subscrições de planos.",
+      en: "Mobile for invoices and recept management, financial reports and subscriptions plans."
+    },
+    shortDescription: {
+      pt: "App de produtividade para mentorias em sessões",
+      en: "Productivity app for sessions mentorship"
+    },
+    technologies: ["React Native", "Firebase", "Tailwind Class", "TypeScript", "SQLite", "Websocket", "WebRTC"],
+    category: "mobile",
+    image: "/projects/task-app-preview.jpg",
+    demoUrl: "#",
+    githubUrl: "https://github.com/johnsimon21/MME/tree/main/MME",
+    status: "completed",
+    featured: true,
+    year: 2025,
+    highlights: {
+      pt: [
+        "Sincronização em tempo real",
+        "Notificações push",
+        "Sessões de mentorias",
+        "Interface intuitiva"
+      ],
+      en: [
+        "Real-time synchronization",
+        "Push notifications",
+        "Sessions mentorship",
         "Intuitive interface"
       ]
     }

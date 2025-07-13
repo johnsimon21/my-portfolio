@@ -61,7 +61,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 4,
     name: 'Vue.js',
-    level: 75,
+    level: 50,
     icon: '💚',
     category: 'frontend',
     color: '#4FC08D',
@@ -73,7 +73,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 5,
     name: 'Tailwind CSS',
-    level: 88,
+    level: 90,
     icon: '🎨',
     category: 'frontend',
     color: '#06B6D4',
@@ -123,7 +123,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 9,
     name: 'Python',
-    level: 78,
+    level: 55,
     icon: '🐍',
     category: 'backend',
     color: '#3776AB',
@@ -135,7 +135,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 10,
     name: 'PHP',
-    level: 70,
+    level: 60,
     icon: '🐘',
     category: 'backend',
     color: '#777BB4',
@@ -161,7 +161,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 12,
     name: 'Flutter',
-    level: 65,
+    level: 40,
     icon: '🦋',
     category: 'mobile',
     color: '#02569B',
@@ -187,7 +187,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 14,
     name: 'PostgreSQL',
-    level: 75,
+    level: 85,
     icon: '🐘',
     category: 'database',
     color: '#336791',
@@ -237,7 +237,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 18,
     name: 'Docker',
-    level: 70,
+    level: 60,
     icon: '🐳',
     category: 'tools',
     color: '#2496ED',
@@ -249,7 +249,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 19,
     name: 'AWS',
-    level: 65,
+    level: 50,
     icon: '☁️',
     category: 'tools',
     color: '#FF9900',
@@ -261,7 +261,7 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: 20,
     name: 'Figma',
-    level: 75,
+    level: 85,
     icon: '🎨',
     category: 'tools',
     color: '#F24E1E',

@@ -1,3 +1,5 @@
+import { handleLinkClick } from "../../utils";
+
 interface SkillsCTAProps {
   isPortuguese: boolean;
 }
@@ -15,7 +17,7 @@ export const SkillsCTA = ({ isPortuguese }: SkillsCTAProps) => {
             : 'I\'m always looking for new challenges and opportunities to apply my skills in innovative projects.'
           }
         </p>
-        <button className="bg-[#208FBB] hover:bg-[#1A7A9A] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
+        <button onClick={() => handleLinkClick("contacts")} className="bg-[#208FBB] hover:bg-[#1A7A9A] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
           {isPortuguese ? 'Entrar em Contato' : 'Get In Touch'}
         </button>
       </div>

@@ -129,8 +129,8 @@ export const ContactInfo = ({ isPortuguese }: ContactInfoProps) => {
                         </summary>
                         <p className="text-[#B1BDDF] text-sm mt-2 pl-4 border-l-2 border-[#208FBB]/30">
                             {isPortuguese
-                                ? '50% no início do projeto, 50% na entrega. Aceito PIX, transferência bancária e cartão.'
-                                : '50% at project start, 50% on delivery. I accept bank transfer, PayPal, and credit cards.'
+                                ? '50% no início do projeto, 50% na entrega. Aceito transferência bancária e cartão.'
+                                : '50% at project start, 50% on delivery. I accept bank transfer, Wise, and credit cards.'
                             }
                         </p>
                     </details>

@@ -29,8 +29,8 @@ export const CONTACT_METHODS: ContactMethod[] = [
     id: 'email',
     name: 'Email',
     label: { pt: 'Email', en: 'Email' },
-    value: 'johnsimon21@example.com',
-    href: 'mailto:johnsimon21@example.com',
+    value: 'johnsimonjs21@gmail.com',
+    href: 'mailto:johnsimon21@gmail.com',
     icon: '📧',
     color: '#208FBB',
     description: {
@@ -42,8 +42,8 @@ export const CONTACT_METHODS: ContactMethod[] = [
     id: 'phone',
     name: 'Phone',
     label: { pt: 'Telefone', en: 'Phone' },
-    value: '+55 (11) 99999-9999',
-    href: 'tel:+5511999999999',
+    value: '+244 922 691 189',
+    href: 'tel:+244922691189',
     icon: '📱',
     color: '#10B981',
     description: {
@@ -55,8 +55,8 @@ export const CONTACT_METHODS: ContactMethod[] = [
     id: 'whatsapp',
     name: 'WhatsApp',
     label: { pt: 'WhatsApp', en: 'WhatsApp' },
-    value: '+55 (11) 99999-9999',
-    href: 'https://wa.me/5511999999999',
+    value: '+244 922 691 189',
+    href: 'https://wa.me/244922691189',
     icon: '💬',
     color: '#25D366',
     description: {
@@ -68,13 +68,13 @@ export const CONTACT_METHODS: ContactMethod[] = [
     id: 'location',
     name: 'Location',
     label: { pt: 'Localização', en: 'Location' },
-    value: 'São Paulo, Brasil',
-    href: 'https://maps.google.com/?q=São+Paulo,+Brasil',
+    value: 'Luanda, Angola',
+    href: 'https://maps.google.com/?q=Luanda,+Angola',
     icon: '📍',
     color: '#EF4444',
     description: {
-      pt: 'Disponível para reuniões presenciais em SP',
-      en: 'Available for in-person meetings in SP'
+      pt: 'Disponível para reuniões presenciais em Luanda',
+      en: 'Available for in-person meetings in Luanda'
     }
   }
 ];
@@ -83,7 +83,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'github',
     name: 'GitHub',
-    url: 'https://github.com/johnsimon21',
+    url: 'https://github.com/johnsimon21/',
     icon: 'github',
     color: '#333',
     username: '@johnsimon21'
@@ -91,7 +91,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/johnsimon',
+    url: 'https://www.linkedin.com/in/john-simonjs',
     icon: 'linkedin',
     color: '#0077B5',
     username: '/in/johnsimon'
@@ -103,6 +103,14 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: 'twitter',
     color: '#1DA1F2',
     username: '@johnsimon21'
+  },
+  {
+    id: 'facebook',
+    name: 'Facebook',
+    url: 'https://web.facebook.com/simaojunior.alerandro/?viewas=100000686899395',
+    icon: 'facebook',
+    color: '#1DA1F4',
+    username: 'John Simon'
   },
   {
     id: 'instagram',
