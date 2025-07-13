@@ -99,10 +99,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'twitter',
     name: 'Twitter',
-    url: 'https://twitter.com/johnsimon21',
+    url: 'https://twitter.com/JohnSimonJS',
     icon: 'twitter',
     color: '#1DA1F2',
-    username: '@johnsimon21'
+    username: '@JohnSimonJS'
   },
   {
     id: 'facebook',
