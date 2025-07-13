@@ -8,7 +8,7 @@ interface ThemeToggleProps {
 
 export const ThemeToggle = ({ isDark, onToggle }: ThemeToggleProps) => {
   return (
-    <div className="toggle shadow-button bg-[#141E46] w-32 h-6 rounded-full flex items-center relative">
+    <div className={`toggle shadow-button bg-[#141E46] w-32 h-6 rounded-full flex items-center relative ${isDark ? 'dark' : 'light'}`}>
       <div className="switch-button border-1 border-[#39559D] w-5 h-5 border border-[#39559D] rounded-full absolute mx-0.5"></div>
       
       <button

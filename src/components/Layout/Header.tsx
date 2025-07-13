@@ -1,7 +1,7 @@
 import { Logo } from '../Logo/Logo';
 import { NavigationMenu } from '../Navigation/NavigationMenu';
-import { ThemeToggle } from '../Toggle/ThemeToggle';
-import { LanguageToggle } from '../Toggle/LanguageToggle';
+// import { ThemeToggle } from '../Toggle/ThemeToggle';
+// import { LanguageToggle } from '../Toggle/LanguageToggle';
 
 interface HeaderProps {
   navigationItems: Array<{ id: string; label: string; isActive?: boolean }>;
@@ -16,11 +16,11 @@ interface HeaderProps {
 export const Header = ({
   navigationItems,
   onNavigationClick,
-  isDarkTheme,
-  onThemeToggle,
-  isPortuguese,
-  onSwitchToPortuguese,
-  onSwitchToEnglish,
+  // isDarkTheme,
+  // onThemeToggle,
+  // isPortuguese,
+  // onSwitchToPortuguese,
+  // onSwitchToEnglish,
 }: HeaderProps) => {
   return (
     <header className="flex flex-col md:flex-row items-center md:items-stretch px-4 sm:px-8 md:px-[80px] h-auto md:h-[210px] py-4 md:py-0 w-full">
