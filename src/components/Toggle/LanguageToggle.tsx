@@ -9,11 +9,11 @@ export const LanguageToggle = ({
   onSwitchToPortuguese, 
   onSwitchToEnglish 
 }: LanguageToggleProps) => {
-  const baseClasses = "lang flex justify-center items-center basis-1/2 w-full h-full cursor-pointer";
+  const baseClasses = "lang flex justify-center items-center basis-1/2 w-full h-full cursor-pointer transition-all duration-300";
   const activeClasses = "lang-active";
 
   return (
-    <div className="toggle shadow-button bg-[#141E46] text-[#B1BDDF] text-[10px] w-32 h-6 ms-[15px] rounded-full flex items-center">
+    <div className="toggle shadow-button bg-[#141E46] text-[#B1BDDF] text-[9px] sm:text-[10px] md:text-[11px] w-24 sm:w-28 md:w-32 h-5 sm:h-6 rounded-full flex items-center">
       <button
         onClick={onSwitchToPortuguese}
         className={`${baseClasses} bg-[#0D0D0D] rounded-l-full ${isPortuguese ? activeClasses : ''}`}

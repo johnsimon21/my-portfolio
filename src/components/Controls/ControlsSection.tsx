@@ -17,8 +17,8 @@ export const ControlsSection = ({
   onSwitchToEnglish,
 }: ControlsSectionProps) => {
   return (
-    <div className="flex items-center">
-      <div className="flex grow">
+    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0 mb-6 sm:mb-8">
+      <div className="flex items-center gap-2 sm:gap-4 order-2 sm:order-1 flex-grow">
         <ThemeToggle 
           isDark={isDarkTheme} 
           onToggle={onThemeToggle} 
@@ -31,8 +31,9 @@ export const ControlsSection = ({
         />
       </div>
       
-      <div className="auto-control border border-[#2E3B63] text-[#B1BDDF] font-semibold w-[200px] h-[60px] ms-[15px] rounded-full flex items-center justify-center cursor-pointer">
-        Automatic control
+      <div className="auto-control border border-[#2E3B63] text-[#B1BDDF] font-semibold w-full sm:w-[160px] md:w-[180px] lg:w-[200px] h-[50px] sm:h-[55px] md:h-[60px] rounded-full flex items-center justify-center cursor-pointer order-1 sm:order-2 text-sm sm:text-base transition-all duration-300 hover:scale-105 hover:border-[#208FBB] hover:text-[#208FBB]">
+        <span className="hidden sm:inline">Automatic control</span>
+        <span className="sm:hidden">Auto control</span>
       </div>
     </div>
   );

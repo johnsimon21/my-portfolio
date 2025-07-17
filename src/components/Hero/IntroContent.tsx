@@ -21,17 +21,24 @@ export const IntroContent = ({ isPortuguese }: IntroContentProps) => {
   const currentContent = isPortuguese ? content.pt : content.en;
 
   return (
-    <div className="flex flex-col ms-[150px] text-[#D0D8EA]">
-      <span className="text-4xl">
-        {currentContent.greeting} <br />
-        {currentContent.name}
-      </span>
+    <div className="flex flex-col lg:ml-8 xl:ml-12 2xl:ml-[150px] text-[#D0D8EA] space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+      {/* Greeting and Name - Responsive text */}
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl leading-tight">
+        <span className="block gradient-text-3d">
+          {currentContent.greeting}
+        </span>
+        <span className="block gradient-text-3d font-bold">
+          {currentContent.name}
+        </span>
+      </div>
 
-      <p className="mt-24 max-w-[590px] font-serif">
+      {/* Description - Responsive text and spacing */}
+      <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg max-w-[280px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[590px] font-serif leading-relaxed text-shadow-3d mx-auto lg:mx-0">
         {currentContent.description}
       </p>
 
-      <p className="my-10 text-[#CFB76F] text-xl font-mono text-center underline underline-offset-1">
+      {/* Motto - Responsive styling */}
+      <p className="text-[#CFB76F] text-base sm:text-lg md:text-xl lg:text-xl font-mono text-center lg:text-center underline underline-offset-2 hover:underline-offset-4 transition-all duration-300 glow-text">
         {currentContent.motto}
       </p>
     </div>
