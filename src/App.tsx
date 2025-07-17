@@ -44,12 +44,12 @@ function App() {
         onSwitchToEnglish={switchToEnglish}
       />
 
-      <hr className="hr border-[#182751] bg-[#182751] h-[8px]" />
+      <hr className="hr border-[#182751] bg-[#182751] h-[4px] sm:h-[6px] md:h-[8px]" />
 
       {/* Main Content Sections */}
       <main className="relative">
-        {/* Hero Section - First thing users see */}
-        <section id="hero" className="py-5 px-[80px] flex flex-col">
+        {/* Hero Section - Responsive padding */}
+        <section id="hero" className="py-4 px-4 sm:py-6 sm:px-8 md:py-8 md:px-12 lg:py-10 lg:px-16 xl:px-20 2xl:px-[80px] flex flex-col">
           <ControlsSection
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
@@ -60,25 +60,25 @@ function App() {
           <HeroSection isPortuguese={isPortuguese} />
         </section>
 
-        {/* About Section - Enhanced with projects showcase */}
+        {/* About Section - Responsive spacing */}
         <AboutSection
           id="about" 
           isPortuguese={isPortuguese} 
         />
 
-        {/* Skills Section */}
+        {/* Skills Section - Responsive spacing */}
         <SkillsSection 
           id="skills" 
           isPortuguese={isPortuguese} 
         />
 
-        {/* Projects Section */}
+        {/* Projects Section - Responsive spacing */}
         <ProjectsSection 
           id="projects" 
           isPortuguese={isPortuguese} 
         />
 
-        {/* Contact Section */}
+        {/* Contact Section - Responsive spacing */}
         <ContactSection 
           id="contacts" 
           isPortuguese={isPortuguese} 

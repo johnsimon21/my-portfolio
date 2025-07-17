@@ -23,12 +23,15 @@ export const Header = ({
   // onSwitchToEnglish,
 }: HeaderProps) => {
   return (
-    <header className="flex flex-col md:flex-row items-center md:items-stretch px-4 sm:px-8 md:px-[80px] h-auto md:h-[210px] py-4 md:py-0 w-full">
-      <nav className="flex flex-col md:flex-row w-full items-center md:items-center">
-        <div className="flex justify-center md:justify-start w-full md:w-auto items-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-0">
+    <header className="flex flex-col lg:flex-row items-center lg:items-stretch px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[80px] h-auto lg:h-[180px] xl:h-[210px] py-4 lg:py-0 w-full">
+      <nav className="flex flex-col lg:flex-row w-full items-center lg:items-center gap-4 lg:gap-0">
+        {/* Logo Section - Responsive sizing */}
+        <div className="flex justify-center lg:justify-start w-full lg:w-auto items-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 lg:mb-0">
           <Logo />
         </div>
-        <div className="flex-1 flex justify-center  md:justify-end w-full">
+        
+        {/* Navigation Section - Responsive positioning */}
+        <div className="flex-1 flex justify-center lg:justify-end w-full">
           <NavigationMenu 
             items={navigationItems} 
             onItemClick={onNavigationClick}
